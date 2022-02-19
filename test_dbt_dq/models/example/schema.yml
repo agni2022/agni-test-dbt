@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: v_sales_account
+    description: "company information about the potential new customers"
+    columns:
+      - name: company_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+  - name: v_invoicing_subscriptions
+    description: "details about the subscription and its status, every customer can only have one active subscription at a time"
+
+
+  - name: v_invoicing_lineitems
+    description: "information about the components of each invoice, every customer can only have one active HRM product at a time, but can have multiple addons"

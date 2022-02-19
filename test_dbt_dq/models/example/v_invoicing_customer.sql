@@ -1,0 +1,1 @@
+select * from "ANALYTICS"."DBT"."INVOICING_CUSTOMER"
